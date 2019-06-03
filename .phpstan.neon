@@ -1,0 +1,14 @@
+services:
+  -
+    class: Acme\PropelQueryEnduseReturnType
+    tags:
+      - phpstan.broker.dynamicMethodReturnTypeExtension
+
+parameters:
+  autoload_directories:
+    - %currentWorkingDirectory%/src
+    - %currentWorkingDirectory%/build
+
+  excludes_analyse:
+    - %currentWorkingDirectory%/build/classes/bookstore/map
+    - %currentWorkingDirectory%/build/classes/bookstore/om

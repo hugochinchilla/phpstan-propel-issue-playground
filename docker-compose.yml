@@ -1,0 +1,10 @@
+version: '2.2'
+
+services:
+  php:
+    build: .
+    user: $UID
+    volumes:
+      - ./:/code/
+    init: true
+    working_dir: /code
